@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  background: linear-gradient(135deg,rgb(1, 1, 73),rgb(213, 102, 28));
+}
+h2{
+  margin-bottom: 20px;
+  color: rgb(1, 1, 73);
+  font-size: 2em;
+}
+#bloc{
+  width: 100%;
+  background-color: white;
+  max-width: 540px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 10px;
+  border-radius: 10px;
+  box-shadow: black 0 0 10px 0;
+}
+#zoneSaisie{
+  display: flex;
+  align-items: center;
+  background-color: rgb(224, 224, 224);
+  border-radius: 30px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#zoneSaisie input{
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  width: 100%;
+  color: rgb(1, 1, 73);
+}
+#zoneSaisie button{
+  border: none;
+  background-color: rgb(213, 102, 28) ;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+ul li{ 
+  padding: 10px 0 5px 35px;
+  list-style: none;
+  user-select: none;
+  font-size: 1.3em;
+  position: relative;
+  cursor: pointer;
+  color: rgb(1, 1, 73);
+  display: inline-block;
+  width: 90%;
+  border-radius: 5px;
+}
+ul li::before{
+  content:"";
+  background-image: url(icon/unchecked.png);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  left: 0;
+  top: 5px;
+}
+.checked{
+  color: grey;
+  text-decoration: line-through;
+}
+.checked::before{
+  background-image: url(icon/checked.png);
+}
+ul span{
+  font-size: 1.7em;
+  position: relative;
+  top :2px;
+  width: 30px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+ul span:hover{
+  background-color: rgb(215, 215, 215);
+}
+#parametre{
+  display: flex;
+  padding-top: 6px;
+  margin-top: 14px;
+  font-size: 1.1em;
+  border-top: rgb(1, 1, 73) solid 2px;
+  font-weight: 600;
+}
+#btnSupprimer{
+  padding: 3px;
+}
+#btnSupprimer:hover{
+  background-color: rgb(215, 215, 215);
+  border-radius: 5px;
+  cursor: pointer;
+}
+#enCours{
+  padding: 3px;
+  margin-left: 70px;
+}
+#enCours span{
+  background-color: rgb(1, 1, 73);
+  border-radius: 50%;
+  padding: 1px 6px;
+  color: white;
+}
+#termine span{
+  background-color: rgb(1, 1, 73);
+  border-radius: 50%;
+  padding: 1px 6px;
+  color:white;
+}
+#termine{
+  padding: 3px;
+  margin-left: 10px;
+}

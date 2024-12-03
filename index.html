@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/daeaf1a76d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>To-do list</title>
+  </head>
+  <body>
+    <main>
+      <div id="bloc">
+        <h2>To-do list</h2>
+        <div id="zoneSaisie">
+          <input type="text" id="saisie" placeholder="Ajouter une tache" />
+          <button id="btn-ajouter" onclick="ajouterListe()">Ajouter</button>
+        </div>
+        <ul id="taches"></ul>
+        <div id="parametre">
+          <div id="btnSupprimer" onclick="toutSupprimer()">Tout supprimer</div>
+          <div id="enCours">Taches <span></span></div>
+          <div id="termine">Terminé <span></span></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
