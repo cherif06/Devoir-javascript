@@ -59,6 +59,7 @@ function enleverTache(index) {
 }
 function toutSupprimer(){
   taches = [];
+  checked = [];
   genererListe();
 }
 
